@@ -1,0 +1,36 @@
+cabal-version:      2.4
+name:               x2023
+version:            0.1.0.0
+
+-- A short (one-line) description of the package.
+-- synopsis:
+
+-- A longer description of the package.
+-- description:
+
+-- A URL where users can report bugs.
+-- bug-reports:
+
+-- The license under which the package is released.
+-- license:
+
+-- The package author(s).
+-- author:
+maintainer:         plh22.ic.ac.uk
+
+-- A copyright notice.
+-- copyright:
+-- category:
+extra-source-files: CHANGELOG.md, Utils.hs, Day01.hs, Day02.hs, Day03.hs, Day04.hs, Day05.hs, Day06.hs, Day07.hs, Day08.hs, Day09.hs, Day10.hs, Day11.hs, Day12.hs
+executable x2023
+
+    main-is:          Main.hs
+
+    -- Modules included in this executable, other than Main.
+    other-modules: Utils, Day01, Day02, Day03, Day04, Day05, Day06, Day07, Day08, Day09, Day10, Day11, Day12
+
+    -- LANGUAGE extensions used by modules in this package.
+    other-extensions: TupleSections
+    build-depends:    base ^>=4.17.2.0, containers, gigaparsec==0.2.1.0, array
+    hs-source-dirs:   app
+    default-language: GHC2021
