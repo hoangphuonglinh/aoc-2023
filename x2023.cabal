@@ -21,16 +21,16 @@ maintainer:         plh22.ic.ac.uk
 -- A copyright notice.
 -- copyright:
 -- category:
-extra-source-files: CHANGELOG.md, Utils.hs, Day01.hs, Day02.hs, Day03.hs, Day04.hs, Day05.hs, Day06.hs, Day07.hs, Day08.hs, Day09.hs, Day10.hs, Day11.hs, Day12.hs
+extra-source-files: CHANGELOG.md, Utils.hs, Day01.hs, Day02.hs, Day03.hs, Day04.hs, Day05.hs, Day06.hs, Day07.hs, Day08.hs, Day09.hs, Day10.hs, Day11.hs, Day12.hs, Day13.hs
 executable x2023
 
     main-is:          Main.hs
 
     -- Modules included in this executable, other than Main.
-    other-modules: Utils, Day01, Day02, Day03, Day04, Day05, Day06, Day07, Day08, Day09, Day10, Day11, Day12
+    other-modules: Utils, Day01, Day02, Day03, Day04, Day05, Day06, Day07, Day08, Day09, Day10, Day11, Day12, Day13
 
     -- LANGUAGE extensions used by modules in this package.
     other-extensions: TupleSections
-    build-depends:    base ^>=4.17.2.0, containers, gigaparsec==0.2.1.0, array
+    build-depends:    base ^>=4.17.2.0, containers, gigaparsec==0.2.1.0, array, text, split
     hs-source-dirs:   app
     default-language: GHC2021

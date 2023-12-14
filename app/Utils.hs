@@ -44,6 +44,16 @@ removeAll (x:xs) c
     | x == c = removeAll xs c
     | otherwise = x : removeAll xs c
 
+diff :: String -> String -> Int
+diff xs ys = diff' xs ys 0
+    where
+        diff' :: String -> String -> Int -> Int
+        diff' xs [] d = d+length xs
+        diff' [] ys d = d+length ys
+        diff' (x:xs) (y:ys) d
+            | x == y = diff' xs ys d
+            | otherwise = diff' xs ys (d+1)
+
 removeSpace :: String -> String
 removeSpace xs = removeAll xs ' '
 
